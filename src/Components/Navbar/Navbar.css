@@ -1,0 +1,110 @@
+.phormalabs__navbar {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box !important;
+  padding: 20px 100px;
+}
+.phormalabs__navbar-logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phormalabs__navbar-logo {
+  height: 80px;
+}
+.phormalabs__navbar-logoText {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.phormalabs__navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.phormalabs__navbar-links ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.phormalabs__navbar-links ul li .linkText5 {
+  padding: 0.5em 1em;
+  background: var(--phormalabs-color);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.phormalabs__navbar-links ul li:hover .linkText5 {
+  background-color: var(--white);
+  color: var(--phormalabs-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.phormalabs__navbar-links_mobile {
+  display: none;
+}
+.phormalabs__hamburger-mobileNav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .phormalabs__hamburger-mobileNav {
+    display: block;
+  }
+  .phormalabs__navbar {
+    padding: 0;
+    height: 100px;
+    padding: 10px;
+  }
+  .phormalabs__navbar-links {
+    display: none;
+  }
+  .phormalabs__navbar-links_mobile {
+    position: absolute;
+    transform-origin: top;
+    background-color: var(--white);
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    transform: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    z-index: 999;
+  }
+  .phormalabs__navbar-links_mobile ul li {
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .phormalabs__navbar-links_mobile ul li .linkText {
+    font-size: 20px;
+  }
+  .phormalabs__navbar-logoText {
+    display: none;
+  }
+  .phormalabs__navbar-logo {
+    height: 60px;
+  }
+}
