@@ -19,7 +19,7 @@ const Hero = () => {
 
             </div>
             <div className='phormalabs__proof'>
-                <h4>Why Would you be Trusting us?</h4>
+                <h4>Why Would you Trust us?</h4>
                 <p>Here's some of our partners</p>
                 <div className='phormalabs__proof-partners'>
                     <img src={Suuber} alt="suuber partner" />
