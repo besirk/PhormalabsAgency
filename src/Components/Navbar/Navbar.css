@@ -67,6 +67,7 @@
 @media screen and (max-width: 768px) {
   .phormalabs__hamburger-mobileNav {
     display: block;
+    color: var(--phormalabs-color);
   }
   .phormalabs__navbar {
     padding: 0;

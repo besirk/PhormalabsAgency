@@ -37,7 +37,7 @@ const Navbar = () => {
         hidden: { opacity: 0, scaleY: 0 },
         show: {
             opacity: 1, scaleY: 1, transition: {
-                duration: 0.25,
+                duration: 0.15,
                 staggerChildren: 0.15
             }
         }
