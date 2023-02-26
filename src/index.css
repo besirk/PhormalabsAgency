@@ -20,7 +20,7 @@
   /* end of transition  */
 
   /* padding  */
-  --section-padding: 96px 150px;
+  --section-padding: 20px 100px;
   --section-h-padding: 20px 150px;
   /* end of padding  */
 
@@ -51,7 +51,7 @@ h1 {
   font-size: 72px;
   line-height: 80px;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--phormalabs-color);
 }
 
 h6 {
@@ -72,7 +72,7 @@ h6 {
   text-decoration: none;
   color: #1c1c1e;
   -webkit-transition: var(--transition);
-          transition: var(--transition);
+  transition: var(--transition);
 }
 .linkText:hover {
   color: var(--phormalabs-color);
@@ -99,14 +99,13 @@ h6 {
   text-transform: capitalize;
 
   -webkit-transition: var(--transition);
-          transition: var(--transition);
+  transition: var(--transition);
 }
 .button:hover {
   background-color: var(--white);
   color: var(--phormalabs-color);
-  box-shadow:  0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .section-padding {
   padding: var(--section-padding);
