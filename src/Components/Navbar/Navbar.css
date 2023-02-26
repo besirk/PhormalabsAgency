@@ -1,7 +1,7 @@
 .phormalabs__navbar {
   width: 100%;
   height: 120px;
-
+  background: #ebf5ff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

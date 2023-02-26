@@ -1,0 +1,72 @@
+.phormalabs__aboutus {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+.phormalabs__aboutus-content {
+  width: 50%;
+}
+.phormalabs__aboutus-content h2 {
+  margin-bottom: 20px;
+}
+
+.phormalabs__aboutus-content-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.phormalabs__aboutus-content_service {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+.phormalabs__aboutus-content_service div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.phormalabs__aboutus-content_service img {
+  width: 150px;
+  margin-right: 20px;
+  margin-top: 20px;
+  filter: invert(46%) sepia(38%) saturate(7270%) hue-rotate(233deg)
+    brightness(99%) contrast(104%);
+}
+.phormalabs__aboutus-content_service h4 {
+  color: var(--phormalabs-color);
+  margin-top: 10px;
+}
+.phormalabs__aboutus-content_service p {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.phormalabs__aboutus-image {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .phormalabs__aboutus {
+    flex-direction: column;
+    width: 100%;
+  }
+  .phormalabs__aboutus-content {
+    width: 100%;
+  }
+  .phormalabs__aboutus-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .phormalabs__aboutus {
+    padding: 50px 20px;
+  }
+  .phormalabs__aboutus-content_service p {
+    width: 100%;
+  }
+}

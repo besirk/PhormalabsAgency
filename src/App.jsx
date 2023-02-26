@@ -1,14 +1,14 @@
-import Hero from "./Components/Hero/Hero";
-import Navbar from "./Components/Navbar/Navbar";
+import { Navbar, Hero, AboutUs } from './Components/'
 
 function App() {
 
   return (
-    <div className="App">
-      <div style={{ background: "#ebf5ff" }}>
-        <Navbar />
-        <Hero />
-      </div>
+    <div className="App" >
+
+      <Navbar />
+      <Hero />
+      <AboutUs />
+
     </div>
   )
 }
