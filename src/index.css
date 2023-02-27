@@ -12,7 +12,12 @@
   --secondary-color: rgba(28, 28, 30, 0.72);
   --white: #fff;
   --phormalabs-color: #9333ea;
-
+  --gradient: linear-gradient(
+    90deg,
+    rgba(124, 92, 255, 1) 0%,
+    rgba(233, 22, 239, 1) 100%
+  );
+  --defaultBg: rgb(124, 92, 255);
   /* end of colors  */
 
   /* transtion  */
@@ -54,7 +59,10 @@ h1 {
   font-size: 72px;
   line-height: 80px;
   font-weight: 700;
-  color: var(--phormalabs-color);
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   font-style: normal;
@@ -106,7 +114,7 @@ h6 {
 .button {
   width: 140px;
   height: 48px;
-  background: var(--phormalabs-color);
+  background: var(--gradient);
   border-radius: 8px;
   text-decoration: none;
   color: var(--white);
@@ -127,9 +135,7 @@ h6 {
   transition: var(--transition);
 }
 .button:hover {
-  background-color: var(--white);
-  color: var(--phormalabs-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .section-padding {

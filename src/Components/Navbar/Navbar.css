@@ -35,7 +35,7 @@
 }
 .phormalabs__navbar-links ul li .linkText5 {
   padding: 0.5em 1em;
-  background: var(--phormalabs-color);
+  background: var(--gradient);
   border-radius: 8px;
   text-decoration: none;
   color: var(--white);
@@ -51,11 +51,10 @@
 
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  transition: 0.25s linear;
 }
 .phormalabs__navbar-links ul li:hover .linkText5 {
-  background-color: var(--white);
-  color: var(--phormalabs-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 .phormalabs__navbar-links_mobile {
   display: none;

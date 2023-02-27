@@ -18,6 +18,7 @@ const Hero = () => {
                 duration: 0.4,
 
             },
+
         },
     };
     const item = {
@@ -43,7 +44,7 @@ const Hero = () => {
                 <motion.img variants={item} src={HeroImg} alt="Hero image" className='phormalabs__hero-image' />
 
             </motion.div>
-            <motion.div className='phormalabs__proof' variants={Container} initial="hidden" whileInView="show">
+            <motion.div className='phormalabs__proof' variants={Container} viewport={{ once: true }} initial="hidden" whileInView="show">
                 <motion.h4 variants={item}>Who Keeps Trust on Us</motion.h4>
                 <motion.p variants={item} >Here's some of our partners</motion.p>
                 <div className='phormalabs__proof-partners'>
