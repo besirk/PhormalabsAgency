@@ -14,6 +14,7 @@ const Hero = () => {
             transition: {
                 staggerChildren: 0.25,
                 when: "beforeChildren",
+                duration: 0.4,
 
             },
         },
@@ -35,16 +36,16 @@ const Hero = () => {
                 <motion.img variants={item} src={HeroImg} alt="Hero image" className='phormalabs__hero-image' />
 
             </motion.div>
-            <div className='phormalabs__proof'>
-                <h4>Who Keeps Trust on Us</h4>
-                <p>Here's some of our partners</p>
+            <motion.div className='phormalabs__proof' variants={Container} initial="hidden" whileInView="show">
+                <motion.h4 variants={item}>Who Keeps Trust on Us</motion.h4>
+                <motion.p variants={item} >Here's some of our partners</motion.p>
                 <div className='phormalabs__proof-partners'>
-                    <img src={Suuber} alt="suuber partner" />
-                    <img src={Wpengine} alt="Wpengine partner" />
-                    <img src={Demogency} alt="Demogency partner" />
+                    <motion.img variants={item} src={Suuber} alt="suuber partner" />
+                    <motion.img variants={item} src={Wpengine} alt="Wpengine partner" />
+                    <motion.img variants={item} src={Demogency} alt="Demogency partner" />
 
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
