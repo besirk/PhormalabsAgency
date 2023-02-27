@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
+  align-items: flex-start;
+  margin-top: 40px;
 }
 .phormalabs__aboutus-content_service div {
   display: flex;
@@ -33,13 +33,12 @@
 .phormalabs__aboutus-content_service img {
   width: 150px;
   margin-right: 20px;
-  margin-top: 20px;
+
   filter: invert(46%) sepia(38%) saturate(7270%) hue-rotate(233deg)
     brightness(99%) contrast(104%);
 }
 .phormalabs__aboutus-content_service h4 {
   color: var(--phormalabs-color);
-  margin-top: 10px;
 }
 .phormalabs__aboutus-content_service p {
   width: 80%;

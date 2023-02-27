@@ -1,10 +1,21 @@
 
 import './aboutus.css';
+import { motion } from 'framer-motion';
 import Imagee from '../../assets/Services/image.svg';
 import Service1 from '../../assets/Services/code.svg';
 import Service2 from '../../assets/Services/presention-chart.svg';
 import Service3 from '../../assets/Services/designtools.svg';
 const AboutUs = () => {
+    const Container = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+        },
+    };
+    const item = {
+        hidden: { opacity: 0, y: 100 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.5, } },
+    };
 
     const services = [{
         icon: Service1,
@@ -21,24 +32,24 @@ const AboutUs = () => {
     }]
 
     return (
-        <div className='phormalabs__aboutus'>
+        <motion.div className='phormalabs__aboutus' variants={Container} initial="hidden" whileInView="show">
             <div className='phormalabs__aboutus-content'>
-                <h2>We make strategies, design & development to create valuable products.</h2>
-                <p>Phormalabs helps businesses go digital with website creation, marketing, branding, e-commerce, and more. We believe a strong online presence is key to success.</p>
+                <motion.h2 variants={item} initial="hidden" whileInView="show">We make strategies, design & development to create valuable products.</motion.h2>
+                <motion.p variants={item} initial="hidden" whileInView="show" >Phormalabs helps businesses go digital with website creation, marketing, branding, e-commerce, and more. We believe a strong online presence is key to success.</motion.p>
                 <div className='phormalabs__aboutus-content_div'>
                     {services.map((service, index) => (
-                        <div key={index} className={`phormalabs__aboutus-content_service`} >
+                        <motion.div variants={item} initial="hidden" whileInView="show" key={index} className={`phormalabs__aboutus-content_service`} >
                             <img src={service.icon} alt="Service Image" />
                             <div>
                                 <h4>{service.title}</h4>
                                 <p>{service.desc}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-            <img src={Imagee} alt='About Us picture' className='phormalabs__aboutus-image' />
-        </div>
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: 0.4, duration: 0.4 } }} src={Imagee} alt='About Us picture' className='phormalabs__aboutus-image' />
+        </motion.div>
     )
 }
 
