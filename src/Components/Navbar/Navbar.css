@@ -48,12 +48,15 @@
   font-size: 18px;
   line-height: 28px;
   /* identical to box height, or 156% */
+  background-size: 100%;
 
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  transition: 0.25s linear;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
 }
 .phormalabs__navbar-links ul li:hover .linkText5 {
+  background-size: 150%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 .phormalabs__navbar-links_mobile {

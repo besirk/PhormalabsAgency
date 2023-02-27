@@ -130,11 +130,12 @@ h6 {
 
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
+  background-size: 100%;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .button:hover {
+  background-size: 300%;
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
 }
 
