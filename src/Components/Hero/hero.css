@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background: #ebf5ff;
+  padding-bottom: 150px !important;
 }
 .phormalabs__hero-content {
   width: 50%;
@@ -28,8 +29,8 @@
   padding: 32px;
   gap: 15px;
 
-  width: 60%;
-  height: 230px;
+  width: 55%;
+  height: 240px;
   margin-top: -70px;
 
   background: var(--white);

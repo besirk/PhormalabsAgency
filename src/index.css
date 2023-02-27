@@ -11,7 +11,7 @@
   --primary-color: #1c1c1e;
   --secondary-color: rgba(28, 28, 30, 0.72);
   --white: #fff;
-  --phormalabs-color: #7c5cff;
+  --phormalabs-color: #9333ea;
 
   /* end of colors  */
 
@@ -30,6 +30,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+html {
+  overflow-x: hidden;
 }
 
 * {
