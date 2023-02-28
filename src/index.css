@@ -73,7 +73,10 @@ h2 {
 
   /* Tertiary/main */
 
-  color: var(--phormalabs-color);
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h4 {
   font-weight: 700;
@@ -83,16 +86,21 @@ h4 {
 
   text-align: center;
 
-  /* Tertiary/dark */
-
-  color: var(--phormalabs-color);
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: var(--secondary-color);
+  background: var(--gradient);
+  background-clip: text;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .linkText {

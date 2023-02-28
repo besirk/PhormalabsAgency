@@ -1,0 +1,109 @@
+.phormalabs__statistics {
+  width: 100%;
+  height: 396px;
+  padding: 24px 24px 24px 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background: var(--gradient);
+  margin: 100px 0px;
+  border-radius: 16px;
+}
+.phormalabs__statistics-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.phormalabs__statistics-content h1 {
+  all: unset;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  /* identical to box height, or 117% */
+
+  color: #fff;
+}
+.button {
+  background: #fff !important;
+  color: var(--phormalabs-color) !important;
+}
+
+.phormalabs__statistics-boxes {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.phormalabs__statistics_box {
+  background: var(--white);
+  width: 250px;
+  height: 150px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.phormalabs__statistics_box h1 {
+  font-weight: 500 !important;
+}
+.phormalabs__statistics_box p {
+  color: var(--secondary-color) !important;
+}
+
+@media screen and (max-width: 1260px) {
+  .phormalabs__statistics {
+    flex-direction: column;
+    height: unset;
+  }
+  .phormalabs__statistics-boxes {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .phormalabs__statistics_box {
+    flex: 0 0 40%;
+  }
+  .phormalabs__statistics-content {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .phormalabs__statistics-content p {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .phormalabs__statistics-content h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .phormalabs__statistics {
+    padding: 20px;
+  }
+  .phormalabs__statistics-content {
+    align-items: flex-start;
+  }
+  .phormalabs__statistics-content p {
+    text-align: left;
+  }
+  .phormalabs__statistics-content .button {
+    width: 100%;
+  }
+  .phormalabs__statistics_box {
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
