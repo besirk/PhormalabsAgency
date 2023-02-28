@@ -100,6 +100,7 @@
   }
   .phormalabs__statistics-content p {
     text-align: left;
+    width: 100%;
   }
   .phormalabs__statistics-content .button {
     width: 100%;
