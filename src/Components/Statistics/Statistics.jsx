@@ -24,7 +24,7 @@ const Statistics = () => {
         },
     ];
     return (
-        <div style={{ padding: "20px 100px" }}>
+        <div className="statisticsPadd">
             <div className="phormalabs__statistics ">
                 <div className="phormalabs__statistics-content">
                     <h1>Let's Get in this Together</h1>

@@ -57,6 +57,9 @@
 .phormalabs__statistics_box p {
   color: var(--secondary-color) !important;
 }
+.statisticsPadd {
+  padding: 20px 100px;
+}
 
 @media screen and (max-width: 1260px) {
   .phormalabs__statistics {
@@ -64,7 +67,7 @@
     height: unset;
   }
   .phormalabs__statistics-boxes {
-    width: 100%;
+    width: 95%;
     justify-content: center;
     align-items: center;
   }
@@ -87,11 +90,11 @@
     font-size: 50px;
     line-height: 50px;
   }
+  .statisticsPadd {
+    padding: 20px 30px;
+  }
 }
 @media screen and (max-width: 426px) {
-  .phormalabs__statistics {
-    padding: 20px;
-  }
   .phormalabs__statistics-content {
     align-items: flex-start;
   }
@@ -105,5 +108,8 @@
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
+  }
+  .statisticsPadd {
+    padding: 20px;
   }
 }
