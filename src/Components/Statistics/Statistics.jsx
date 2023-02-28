@@ -33,7 +33,7 @@ const Statistics = () => {
                         create a unique digital strategy that sets you apart from the
                         competition and delivers measurable results.
                     </p>
-                    <a className="button" href="#">
+                    <a className="button custom-buttStat" href="#">
                         Get Started
                     </a>
                 </div>
