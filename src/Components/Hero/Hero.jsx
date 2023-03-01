@@ -5,6 +5,7 @@ import Suuber from '../../assets/partners/suuber_logo.png';
 import Wpengine from '../../assets/partners/wpengine.png';
 import Demogency from '../../assets/partners/demogency.webp';
 import Typical from 'react-typical';
+import Carousel from '../Carousel/Carousel';
 
 const Hero = () => {
 
@@ -47,12 +48,12 @@ const Hero = () => {
             <motion.div className='phormalabs__proof' variants={Container} viewport={{ once: true }} initial="hidden" whileInView="show">
                 <motion.h4 variants={item}>Who Keeps Trust on Us</motion.h4>
                 <motion.p variants={item} >Here's some of our partners</motion.p>
-                <div className='phormalabs__proof-partners'>
+                {/* <div className='phormalabs__proof-partners'>
                     <motion.img variants={item} src={Suuber} alt="suuber partner" />
                     <motion.img variants={item} src={Wpengine} alt="Wpengine partner" />
                     <motion.img variants={item} src={Demogency} alt="Demogency partner" />
-
-                </div>
+                </div> */}
+                <Carousel />
             </motion.div>
         </>
     )

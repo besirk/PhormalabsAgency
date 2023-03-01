@@ -1,6 +1,6 @@
 import "./aboutus.css";
 import { motion } from "framer-motion";
-import Imagee from "../../assets/Services/image.svg";
+import Imagee from "../../assets/webite.webp";
 import Service1 from "../../assets/Services/code.svg";
 import Service2 from "../../assets/Services/presention-chart.svg";
 import Service3 from "../../assets/Services/designtools.svg";

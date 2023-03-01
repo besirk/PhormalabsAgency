@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: row;
   background: var(--gradient);
-  margin: 100px 0px;
+  margin: 50px 0px;
   border-radius: 16px;
 }
 .phormalabs__statistics-content {
