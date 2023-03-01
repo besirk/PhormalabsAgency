@@ -27,6 +27,9 @@
 
   color: #fff;
 }
+.phormalabs__statistics-content p {
+  color: var(--secondary-color);
+}
 .custom-buttStat {
   background: #fff !important;
   color: var(--phormalabs-color) !important;
