@@ -24,7 +24,7 @@ const Statistics = () => {
         },
     ];
     return (
-        <div className="statisticsPadd">
+        <div className="statisticsPadd" id="statistics">
             <div className="phormalabs__statistics ">
                 <div className="phormalabs__statistics-content">
                     <h1>Let's Get in this Together</h1>

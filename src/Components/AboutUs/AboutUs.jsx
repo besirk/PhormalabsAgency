@@ -40,6 +40,7 @@ const AboutUs = () => {
             variants={Container}
             initial="hidden"
             whileInView="show"
+            id="aboutus"
         >
             <div className="phormalabs__aboutus-content">
                 <motion.h2

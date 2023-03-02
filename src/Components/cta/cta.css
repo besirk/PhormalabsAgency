@@ -1,0 +1,33 @@
+.phormalabs__cta {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phormalabs__cta h2 {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.phormalabs__cta .emailll {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .phormalabs__cta {
+    padding: 20px;
+  }
+  .phormalabs__cta h2 {
+    font-size: 30px;
+  }
+  .phormalabs__cta p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .emailll {
+    font-size: 18px !important;
+  }
+}

@@ -19,7 +19,6 @@ const Hero = () => {
                 duration: 0.4,
 
             },
-
         },
     };
     const item = {

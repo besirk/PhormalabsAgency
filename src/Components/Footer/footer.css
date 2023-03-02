@@ -1,0 +1,56 @@
+.phormalabs__footer {
+  width: 100%;
+  height: 200px;
+  background: #ebf5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 100px;
+}
+
+.phormalabs__footer img {
+  height: 80px;
+}
+.logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phormalabs__footer-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.phormalabs__footer-links ul li {
+  list-style-type: none;
+}
+
+.phormalabs__copyright {
+  background: var(--gradient);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.phormalabs__copyright p {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .phormalabs__footer {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+  }
+  .phormalabs__footer-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+}
