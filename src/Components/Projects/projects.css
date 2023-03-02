@@ -1,0 +1,123 @@
+.phormalabs__projects {
+  width: 100%;
+  padding: 50px 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.phormalabs__projects-project {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  justify-content: space-between;
+}
+.projectSingle {
+  width: 40%;
+  margin-right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectSingle img {
+  width: 100%;
+  border-radius: 18px;
+}
+.projectSingle h4 {
+  margin-top: 18px;
+  text-align: left !important;
+}
+.projectSingle p {
+  color: var(--secondary-color) !important;
+  height: 80px;
+}
+.projectSingle .SingleAttr {
+  background: var(--gradient);
+  padding: 10px 16px;
+  height: unset;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: #fff !important;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.projectSingle a {
+  color: var(--phormalabs-color);
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: 0.25s linear;
+}
+.projectSingle a:hover {
+  color: blue;
+}
+
+.projectSingle_last {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .projectSingle p {
+    height: 100px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectSingle_last {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .projectSingle p {
+    height: 130px;
+  }
+  .projectSingle h4 {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .phormalabs__projects {
+    padding: 50px 20px;
+  }
+  .phormalabs__projects h2 {
+    align-self: flex-start;
+  }
+  .phormalabs__projects-project {
+    width: 100%;
+  }
+  .projectSingle {
+    width: 100%;
+  }
+  .projectSingle_last {
+    flex-direction: row;
+  }
+  .projectSingle_last a {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectSingle h4 {
+    height: 50px;
+  }
+  .projectSingle p {
+    height: 100px;
+  }
+  .SingleAttr {
+    width: 60%;
+  }
+}

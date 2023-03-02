@@ -1,4 +1,4 @@
-import { Navbar, Hero, AboutUs, Statistics } from './Components/'
+import { Navbar, Hero, AboutUs, Statistics, Projects } from './Components/'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Statistics />
+      <Projects />
 
     </div>
   )

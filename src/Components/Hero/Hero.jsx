@@ -41,10 +41,9 @@ const Hero = () => {
                     <motion.p variants={item}>Ready to take your brand on a journey of digital success? Let's create a unique digital strategy that sets you apart from the competition and delivers measurable results.</motion.p>
                     <motion.a variants={item} href="#contact" className='button'>Get Started</motion.a>
                 </div>
-
                 <motion.img variants={item} src={HeroImg} alt="Hero image" className='phormalabs__hero-image' />
-
             </motion.div>
+
             <motion.div className='phormalabs__proof' variants={Container} viewport={{ once: true }} initial="hidden" whileInView="show">
                 <motion.h4 variants={item}>Who Keeps Trust on Us</motion.h4>
                 <motion.p variants={item} >Here's some of our partners</motion.p>
