@@ -4,6 +4,8 @@ import Galaxy from '../../assets/projects/galaxy.jpg';
 import Suuber from '../../assets/projects/suuber.jpg';
 import Mommy from '../../assets/projects/mommy.jpg';
 import Zenit from '../../assets/projects/30.jpg';
+import Hte from '../../assets/projects/hteMk.jpg'
+import Sigurnost from '../../assets/projects/sigurnost.jpg'
 
 const Projects = () => {
     const projects = [{
@@ -18,6 +20,13 @@ const Projects = () => {
         projectAttr: "Website",
         projectLink: "https://galaxy.com.mk",
         projectImg: Galaxy
+    },
+    {
+        projectName: "High Tech Energy Website",
+        projectDesc: "Created a modern and sleek website for a solar energy company located in Skopje, North Macedonia",
+        projectAttr: "Wordpress Website",
+        projectLink: "https://hte.mk",
+        projectImg: Hte
     }, {
         projectName: "Suuber.ch Landing Pages",
         projectDesc: "We have created two innovative and user-friendly landing pages: Jobs City and Cleaners City. Both landing pages have been designed with the latest UI/UX trends to ensure a seamless and enjoyable experience for the users.",
@@ -36,7 +45,14 @@ const Projects = () => {
         projectAttr: "Social Media",
         projectLink: "https://facebook.com/zenit.mk",
         projectImg: Zenit
-    },]
+    },
+    {
+        projectName: "Sigurnost Avtoskola Logo",
+        projectDesc: "Created their Logo, Facebook Cover and currently designing facebook posts for their page and launching their ad campaigns.",
+        projectAttr: "Social Media",
+        projectLink: "https://facebook.com/sigurnost",
+        projectImg: Sigurnost
+    }]
     return (
         <div className='phormalabs__projects' id='projects'>
             <h2>Built By Phormalabs</h2>
