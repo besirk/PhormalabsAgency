@@ -24,10 +24,16 @@ const Projects = () => {
     {
         projectName: "High Tech Energy Website",
         projectDesc: "Created a modern and sleek website for a solar energy company located in Skopje, North Macedonia",
-        projectAttr: "Wordpress Website",
+        projectAttr: "Wordpress",
         projectLink: "https://hte.mk",
         projectImg: Hte
-    }, {
+    },   {
+        projectName: "Avtoskola Sigurnost Website",
+        projectDesc: "Created a modern and sleek website for a driving school located in Skopje, North Macedonia",
+        projectAttr: "Website",
+        projectLink: "https://avtoskola-sigurnost.mk",
+        projectImg: Sigurnost
+    },{
         projectName: "Suuber.ch Landing Pages",
         projectDesc: "We have created two innovative and user-friendly landing pages: Jobs City and Cleaners City. Both landing pages have been designed with the latest UI/UX trends to ensure a seamless and enjoyable experience for the users.",
         projectAttr: "Landing Pages",
@@ -50,7 +56,7 @@ const Projects = () => {
         projectName: "Sigurnost Avtoskola Logo",
         projectDesc: "Created their Logo, Facebook Cover and currently designing facebook posts for their page and launching their ad campaigns.",
         projectAttr: "Social Media",
-        projectLink: "https://facebook.com/sigurnost",
+        projectLink: "https://www.facebook.com/avtoskolasigurnost",
         projectImg: Sigurnost
     }]
     return (
