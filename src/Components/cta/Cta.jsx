@@ -4,29 +4,32 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button, TextField, TextareaAutosize } from '@mui/material';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { toast } from 'react-toastify';
 
 
 const Cta = () => {
   const form = useRef();
   const captchaRef = useRef(null);
-  const [isToken, setIsToken] = useState(false);
+  const [isToken, setIsToken] = useState(true);
 
   const sendEmail = (e) => {
+    setIsToken(false);
     e.preventDefault();
 
     emailjs
       .sendForm('service_n4a0i1o', 'template_kvnvpjs', form.current, 'R4MJrfRVV1D9F2SiP')
       .then(
         (result) => {
-          console.log(result.text);
+          toast.success("Your message has been delivered! Thank you.")
+          form.current.reset();
         },
         (error) => {
-          console.log(error.text);
+          toast.success("We had an error sending your message! Please try again.")
         }
       );
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
-    setIsToken(false)
+   
   };
 
   const onChange = (token) => {
@@ -53,7 +56,7 @@ const Cta = () => {
           placeholder="Please enter your message here"
           name="message"
         />
-        {isToken ? (<Button variant="contained" type="submit" endIcon={<SendIcon />}>
+        {isToken  ? (<Button variant="contained" type="submit" endIcon={<SendIcon />}>
           Send
         </Button>) : ""}
         <ReCAPTCHA sitekey="6LfUsgsmAAAAAL6bxbekILlum3e1pqeqahuCA2x_" ref={captchaRef} onChange={onChange} />
