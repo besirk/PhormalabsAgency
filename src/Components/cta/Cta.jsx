@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Cta = () => {
   const form = useRef();
   const captchaRef = useRef(null);
-  const [isToken, setIsToken] = useState(true);
+  const [isToken, setIsToken] = useState(false);
 
   const sendEmail = (e) => {
     setIsToken(false);
