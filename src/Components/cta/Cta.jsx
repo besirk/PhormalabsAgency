@@ -4,13 +4,15 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button, TextField, TextareaAutosize } from '@mui/material';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Cta = () => {
   const form = useRef();
   const captchaRef = useRef(null);
-  const [isToken, setIsToken] = useState(false);
+  const [isToken, setIsToken] = useState(true);
 
   const sendEmail = (e) => {
     setIsToken(false);
@@ -62,6 +64,7 @@ const Cta = () => {
         </Button>) : ""}
         <ReCAPTCHA sitekey="6LfUsgsmAAAAAL6bxbekILlum3e1pqeqahuCA2x_" ref={captchaRef} onChange={onChange} />
       </form>
+      <ToastContainer />
     </div>
   );
 };
