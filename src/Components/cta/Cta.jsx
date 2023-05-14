@@ -26,6 +26,7 @@ const Cta = () => {
       );
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
+    setIsToken(false)
   };
 
   const onChange = (token) => {
