@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 const Cta = () => {
   const form = useRef();
   const captchaRef = useRef(null);
-  const [isToken, setIsToken] = useState(true);
+  const [isToken, setIsToken] = useState(false);
 
   const sendEmail = (e) => {
     setIsToken(false);
@@ -24,7 +24,7 @@ const Cta = () => {
           form.current.reset();
         },
         (error) => {
-          toast.success("We had an error sending your message! Please try again.")
+          toast.error("We had an error sending your message! Please try again.")
         }
       );
     const token = captchaRef.current.getValue();
@@ -50,11 +50,12 @@ const Cta = () => {
       <form ref={form} onSubmit={sendEmail} className="contact_form">
         <TextField id="email" name="email" label="Email" variant="outlined" />
         <TextField id="from_name" name="from_name" label="Name" variant="outlined" />
-        <TextareaAutosize
-          aria-label="empty textarea"
-          minRows={3}
-          placeholder="Please enter your message here"
-          name="message"
+        <TextField
+          label="Write your message"
+          multiline
+          rows={5}
+          name='message'
+          variant="outlined"
         />
         {isToken  ? (<Button variant="contained" type="submit" endIcon={<SendIcon />}>
           Send
