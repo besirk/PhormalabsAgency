@@ -1,27 +1,47 @@
 .phormalabs__cta {
-  width: 100%;
-  padding: 100px;
+  width: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
 .phormalabs__cta h2 {
   width: 100%;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 .phormalabs__cta .emailll {
   font-size: 20px;
+  text-transform: lowercase;
 }
+
+.contact_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 100px;
+}
+
+.contact_form {
+  display: flex;
+  max-width: 100%;
+  width: 300px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 
 @media screen and (max-width: 768px) {
   .phormalabs__cta {
-    padding: 20px;
+    align-items: center;
+    
   }
   .phormalabs__cta h2 {
     font-size: 30px;
+    text-align: center;
   }
   .phormalabs__cta p {
     font-size: 16px;
@@ -30,4 +50,9 @@
   .emailll {
     font-size: 18px !important;
   }
+  .contact_section {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
+
