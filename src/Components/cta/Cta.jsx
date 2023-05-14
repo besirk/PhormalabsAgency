@@ -55,7 +55,7 @@ const Cta = () => {
         {isToken ? (<Button variant="contained" type="submit" endIcon={<SendIcon />}>
           Send
         </Button>) : ""}
-        <ReCAPTCHA sitekey="6LceEgsmAAAAAD5xbjoBnvQQR5rJT0cexFN0e4Ib" ref={captchaRef} onChange={onChange} />
+        <ReCAPTCHA sitekey="6LfUsgsmAAAAAL6bxbekILlum3e1pqeqahuCA2x_" ref={captchaRef} onChange={onChange} />
       </form>
     </div>
   );
