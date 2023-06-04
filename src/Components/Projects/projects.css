@@ -77,19 +77,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .projectSingle_last {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .projectSingle p {
-    height: 130px;
-  }
-  .projectSingle h4 {
-    height: 60px;
-  }
-}
-
-@media screen and (max-width: 426px) {
   .phormalabs__projects {
     padding: 50px 20px;
   }
@@ -113,10 +100,10 @@
     align-items: center;
   }
   .projectSingle h4 {
-    height: 50px;
+    height: 60px;
   }
   .projectSingle p {
-    height: 100px;
+    height: 110px;
   }
   .SingleAttr {
     width: 60%;
