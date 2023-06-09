@@ -1,5 +1,5 @@
 import "./statistics.css";
-
+import {motion} from 'framer-motion'
 const Statistics = () => {
     const stats = [
         {
@@ -23,23 +23,43 @@ const Statistics = () => {
             txt: "Success Rate",
         },
     ];
+
+    const Container = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15,
+                when: "beforeChildren",
+                duration: 0.3,
+
+            },
+        },
+    };
+    const item = {
+        hidden: { opacity: 0, x:-100},
+        show: { opacity: 1, x:0, transition: {  type: 'spring' } },
+    };
+
+
     return (
-        <div className="statisticsPadd" id="statistics">
+        <motion.div variants={Container} initial="hidden" whileInView="show" className="statisticsPadd" id="statistics">
             <div className="phormalabs__statistics ">
                 <div className="phormalabs__statistics-content">
-                    <h1>Let's Get in this Together</h1>
-                    <p>
+                    <motion.h1 variants={item}>Let's Get in this Together</motion.h1>
+                    <motion.p variants={item}>
                         Ready to take your brand on a journey of digital success? Let's
                         create a unique digital strategy that sets you apart from the
                         competition and delivers measurable results.
-                    </p>
-                    <a className="button custom-buttStat" href="#">
+                    </motion.p>
+                    <motion.a variants={item} className="button custom-buttStat" href="#">
                         Get Started
-                    </a>
+                    </motion.a>
                 </div>
-                <div className="phormalabs__statistics-boxes">
+                <motion.div  className="phormalabs__statistics-boxes">
                     {stats.map((stat, index) => (
-                        <div
+                        <motion.div
+                            variants={item}
                             className={`phormalabs__statistics_box box${index}`}
                             key={index}
                         >
@@ -48,11 +68,11 @@ const Statistics = () => {
                                 {stat.sign}
                             </h1>
                             <p>{stat.txt}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
