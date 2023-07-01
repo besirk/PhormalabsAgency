@@ -11,7 +11,11 @@
 .phormalabs__aboutus-content h2 {
   margin-bottom: 20px;
 }
-
+.phormalabs__aboutus-content p {
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 22px;
+}
 .phormalabs__aboutus-content-div {
   display: flex;
   flex-direction: row;
@@ -63,6 +67,9 @@
   }
 }
 @media screen and (max-width: 475px) {
+  .phormalabs__aboutus-content p {
+    font-size: 16px;
+  }
   .phormalabs__aboutus {
     padding: 50px 20px;
   }

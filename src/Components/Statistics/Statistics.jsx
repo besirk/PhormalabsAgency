@@ -26,19 +26,17 @@ const Statistics = () => {
 
     const Container = {
         hidden: { opacity: 0 },
-        show: {
+        show: (i = 1) => ({
             opacity: 1,
             transition: {
-                staggerChildren: 0.15,
-                when: "beforeChildren",
-                duration: 0.3,
-
+                staggerChildren: 0.12,
+                delayChildren : 0.04 * i,
             },
-        },
+        }),
     };
     const item = {
-        hidden: { opacity: 0, x:-100},
-        show: { opacity: 1, x:0, transition: {  type: 'spring' } },
+        hidden: { opacity: 0, y:-20, transition: {  type: 'spring', damping: 12, stiffness : 100 } },
+        show: { opacity: 1, y:0, transition: {  type: 'spring', damping: 12, stiffness : 100 } },
     };
 
 
@@ -46,13 +44,11 @@ const Statistics = () => {
         <motion.div variants={Container} initial="hidden" whileInView="show" className="statisticsPadd" id="statistics">
             <div className="phormalabs__statistics ">
                 <div className="phormalabs__statistics-content">
-                    <motion.h1 variants={item}>Let's Get in this Together</motion.h1>
+                    <motion.h2 variants={item}>Why Choose Us?</motion.h2>
                     <motion.p variants={item}>
-                        Ready to take your brand on a journey of digital success? Let's
-                        create a unique digital strategy that sets you apart from the
-                        competition and delivers measurable results.
+                        We are not your <span style={{color: "rgba(28, 28, 30, 0.72)", fontWeight: "bold"}}>average agency</span>. We are a team of digital enthusiasts, creative masterminds, and strategic thinkers who are deeply immersed in the digital world.
                     </motion.p>
-                    <motion.a variants={item} className="button custom-buttStat" href="#">
+                    <motion.a variants={item} className="button custom-buttStat" href="#contact">
                         Get Started
                     </motion.a>
                 </div>

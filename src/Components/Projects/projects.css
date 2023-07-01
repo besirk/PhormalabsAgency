@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .phormalabs__projects-project {
   margin-top: 50px;
   display: flex;
@@ -66,7 +67,7 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -94,7 +95,11 @@
     padding: 50px 20px;
   }
   .phormalabs__projects h2 {
-    align-self: flex-start;
+    text-align: center;
+  }
+  .phormalabs__projects h6 {
+    
+    text-align: center;
   }
   .phormalabs__projects-project {
     width: 100%;
@@ -117,6 +122,7 @@
   }
   .projectSingle p {
     height: 110px;
+    font-size: 16px;
   }
   .SingleAttr {
     width: 60%;

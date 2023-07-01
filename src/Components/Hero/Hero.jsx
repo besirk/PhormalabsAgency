@@ -44,8 +44,8 @@ const Hero = () => {
             </motion.div>
 
             <motion.div className='phormalabs__proof' variants={Container} viewport={{ once: true }} initial="hidden" whileInView="show">
-                <motion.h4 variants={item}>Who Keeps Trust on Us</motion.h4>
-                <motion.p variants={item} >Here's some of our partners</motion.p>
+                <motion.h4 variants={item}>A few companies we've helped...</motion.h4>
+                {/* <motion.p variants={item} >Here's some of our partners</motion.p> */}
                 {/* <div className='phormalabs__proof-partners'>
                     <motion.img variants={item} src={Suuber} alt="suuber partner" />
                     <motion.img variants={item} src={Wpengine} alt="Wpengine partner" />

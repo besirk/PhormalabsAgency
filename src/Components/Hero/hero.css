@@ -15,6 +15,7 @@
 }
 .phormalabs__hero-content p {
   margin-bottom: 30px;
+  font-size: 18px;
 }
 .phormalabs__hero-content .button {
   margin-bottom: 10px;
@@ -27,8 +28,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 32px;
-  gap: 15px;
+  gap: 2rem;
 
   width: 55%;
   height: 240px;
@@ -89,7 +91,7 @@
   .phormalabs__hero {
     align-items: flex-start;
     text-align: left;
-    padding: 50px 30px !important;
+    padding: 50px 16px !important;
   }
   .phormalabs__hero-content .button {
     width: 100%;

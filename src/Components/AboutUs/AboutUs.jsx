@@ -29,8 +29,8 @@ const AboutUs = () => {
         },
         {
             icon: Service3,
-            title: "Logo Design",
-            desc: "Our design team can create incredible logos and branding for your business. With our years of experience, we will bring an elegant touch to your brand.",
+            title: "Content Creation",
+            desc: "Our design team can create incredible content and graphic posts for your business. With our years of experience, we will bring an elegant touch to your brand social profiles.",
         },
     ];
 
@@ -57,7 +57,7 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    Phormalabs helps businesses go digital with website creation,
+                    Phormalabs helps <span style={{fontWeight: 'bold', color: '#fbae17'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#fbae17'}}>Solar Companies</span> go digital with website creation,
                     marketing, branding, e-commerce, and more. We believe a strong online
                     presence is key to success.
                 </motion.p>

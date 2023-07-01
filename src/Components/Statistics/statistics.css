@@ -1,7 +1,7 @@
 .phormalabs__statistics {
   width: 100%;
   height: 396px;
-  padding: 24px 24px 24px 24px;
+  padding: 24px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,8 +19,9 @@
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
+  overflow: hidden;
 }
-.phormalabs__statistics-content h1 {
+.phormalabs__statistics-content h2 {
   all: unset;
   font-weight: 700;
   font-size: 55px;
@@ -30,8 +31,9 @@
   color: #fff;
 }
 .phormalabs__statistics-content p {
-  color: var(--secondary-color);
+  color: var(--white);
   width: 70%;
+  font-size: 18px;
 }
 .custom-buttStat {
   background: #fff !important;
@@ -75,7 +77,7 @@
 @media screen and (max-width: 1260px) {
   .phormalabs__statistics {
     flex-direction: column;
-    height: unset;
+    height: max-content;
   }
   .phormalabs__statistics-boxes {
     width: 95%;
@@ -93,21 +95,31 @@
   .phormalabs__statistics-content p {
     width: 70%;
     text-align: center;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .phormalabs__statistics-boxes {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   .phormalabs__statistics-content h1 {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
   .statisticsPadd {
     padding: 20px 30px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
+  .phormalabs__statistics { 
+    padding: 1.5 1rem;
+  }
   .phormalabs__statistics-content {
     align-items: flex-start;
+    width: 100%;
   }
   .phormalabs__statistics-content p {
     text-align: left;

@@ -61,8 +61,8 @@ const Projects = () => {
     }]
     return (
         <div className='phormalabs__projects' id='projects'>
-            <h2>Built By Phormalabs</h2>
-            <h6>Here, you'll find a showcase of the innovative and impactful projects we've completed for our clients. </h6>
+            <h2>Don't just take our word for it.</h2>
+            <h6>Here, you'll find a showcase of the incredible projects we've completed for our clients. </h6>
 
             <div className='phormalabs__projects-project'>
                 {projects.map((project, index) =>
