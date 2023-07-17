@@ -1,9 +1,9 @@
 import "./aboutus.css";
 import { motion } from "framer-motion";
 import Imagee from "../../assets/webite.webp";
-import Service1 from "../../assets/Services/code.svg";
-import Service2 from "../../assets/Services/presention-chart.svg";
-import Service3 from "../../assets/Services/designtools.svg";
+import { faCode, faFeatherPointed, faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const AboutUs = () => {
     const Container = {
         hidden: { opacity: 0 },
@@ -18,19 +18,19 @@ const AboutUs = () => {
 
     const services = [
         {
-            icon: Service1,
+            icon: faCode,
             title: "Web Development",
-            desc: "We will create websites using the latest trends in the industry. Our goal is to provide affordable and quality websites that exceed your expectations at a great value.",
+            desc: "We are committed to delivering modern, high-quality websites that go beyond your expectations while maintaining a great value. We also do AI CHATBOTS",
         },
         {
-            icon: Service2,
-            title: "Social Media Marketing",
-            desc: "If you want to reach out of your potential customers and grow in a bigger way, we would love to help you with your social media marketing. We are the right people for you!",
+            icon: faFeatherPointed,
+            title: "Copywriting",
+            desc: "Using the power of words to attract customers and leveraging their curiosity to drive purchases! ",
         },
         {
-            icon: Service3,
+            icon: faPhotoFilm,
             title: "Content Creation",
-            desc: "Our design team can create incredible content and graphic posts for your business. With our years of experience, we will bring an elegant touch to your brand social profiles.",
+            desc: "We're masters of content creation. We create captivating, purpose-driven content that not only grabs your audience's attention but also effectively communicates your brand's message.",
         },
     ];
 
@@ -57,7 +57,7 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    Phormalabs helps <span style={{fontWeight: 'bold', color: '#fbae17'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#fbae17'}}>Solar Companies</span> go digital with website creation,
+                    Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
                     marketing, branding, e-commerce, and more. We believe a strong online
                     presence is key to success.
                 </motion.p>
@@ -71,7 +71,7 @@ const AboutUs = () => {
                             key={index}
                             className={`phormalabs__aboutus-content_service`}
                         >
-                            <img src={service.icon} alt="Service Image" />
+                            <FontAwesomeIcon icon={service.icon} className="icon" />
                             <div>
                                 <h4>{service.title}</h4>
                                 <p>{service.desc}</p>
