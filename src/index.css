@@ -158,3 +158,8 @@ h6 {
   align-items: center;
   flex-direction: column;
 }
+
+
+.bpw-floating-button {
+  background: var(--gradient) !important;
+}
