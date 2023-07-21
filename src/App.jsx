@@ -29,6 +29,7 @@ function App() {
         emailAddress: "contact@phormalabs.com",
         website: "https://phormalabs.com",
         stylesheet: "https://www.phormalabs.com/assets/index-d9c5ea70.css",
+        enableTranscriptDownload: false,
         useSessionStorage: true,
       });
     };
