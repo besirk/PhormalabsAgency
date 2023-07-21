@@ -28,7 +28,7 @@ function App() {
         phoneNumber: "+389 70 362 182",
         emailAddress: "contact@phormalabs.com",
         website: "https://phormalabs.com",
-        stylesheet: "/assets/index-d7a68970.css",
+        stylesheet: "https://www.phormalabs.com/assets/index-d9c5ea70.css",
         useSessionStorage: true,
       });
     };
