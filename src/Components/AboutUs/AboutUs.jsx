@@ -49,7 +49,7 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    We make strategies, design & development to create valuable products.
+                    No Matter Your Business Size, We'll Help You Scale and Secure More Clients
                 </motion.h2>
                 <motion.p
                     variants={item}
@@ -57,9 +57,10 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
+                    {/* Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
                     marketing, branding, e-commerce, and more. We believe a strong online
-                    presence is key to success.
+                    presence is key to success. */}
+                    No matter the size of your business, Phormalabs is your partner in growth. We provide <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> with digital services, including website creation, marketing and Copywriting. With our help, you can amplify your online presence, scale efficiently, and secure more clients.
                 </motion.p>
                 <div className="phormalabs__aboutus-content_div">
                     {services.map((service, index) => (

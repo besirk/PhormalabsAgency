@@ -2,16 +2,33 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   background: #ebf5ff;
   padding-bottom: 170px !important;
 }
 .phormalabs__hero-content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
-.phormalabs__hero-content h1 {
+.phormalabs__hero-content_header {
+  all: unset;
+  font-family: "Unbounded", sans-serif;
+
+  color: #1d1d1d;
   margin-bottom: 20px;
   width: 100%;
+  font-size: 62px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.phormalabs__hero-content_header span {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .phormalabs__hero-content p {
   margin-bottom: 30px;
@@ -68,8 +85,8 @@
     align-items: center;
     width: 100%;
   }
-  .phormalabs__hero-content h1 {
-    font-size: 50px;
+  .phormalabs__hero-content_header {
+    font-size: 40px;
     line-height: 50px;
   }
   .phormalabs__hero-image {

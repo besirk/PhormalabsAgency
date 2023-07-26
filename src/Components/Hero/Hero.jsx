@@ -30,12 +30,8 @@ const Hero = () => {
         <>
             <motion.div variants={Container} initial="hidden" animate="show" className='phormalabs__hero section-padding'>
                 <div className='phormalabs__hero-content '>
-                    <motion.h1 variants={item}>Digitalize your <br></br>
-                        <Typical
-                            steps={[500, "Business", 1000, "Brand", 1000]}
-                            loop={Infinity}
-                            wrapper="span"
-                        />
+                    <motion.h1 variants={item} className='phormalabs__hero-content_header'>Do you want to scale your <span>BUSINESS</span>?
+                        
                     </motion.h1>
                     <motion.p variants={item}>Ready to take your brand on a journey of digital success? Let's create a unique digital strategy that sets you apart from the competition and delivers measurable results.</motion.p>
                     <motion.a variants={item} href="#contact" className='button'>Get Started</motion.a>
