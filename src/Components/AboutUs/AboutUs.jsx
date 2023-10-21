@@ -19,8 +19,8 @@ const AboutUs = () => {
     const services = [
         {
             icon: faCode,
-            title: "Web Development",
-            desc: "We are committed to delivering modern, high-quality websites that go beyond your expectations while maintaining a great value. We also do AI CHATBOTS",
+            title: "Landing Pages",
+            desc: "Our high-converting landing pages make your visitors give their wallet to you.",
         },
         {
             icon: faFeatherPointed,
@@ -49,7 +49,7 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    No Matter Your Business Size, We'll Help You Scale and Secure More Clients
+                    Dear Coach or Consultant, We get it. Getting high quality leads is hard. Really hard.
                 </motion.h2>
                 <motion.p
                     variants={item}
@@ -60,7 +60,11 @@ const AboutUs = () => {
                     {/* Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
                     marketing, branding, e-commerce, and more. We believe a strong online
                     presence is key to success. */}
-                    No matter the size of your business, Phormalabs is your partner in growth. We provide <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> with digital services, including website creation, marketing and Copywriting. With our help, you can amplify your online presence, scale efficiently, and secure more clients.
+                    You're probably worried about where your next customer will come from. Stressed and sleeping like a two-year-old. And to top it all of you're being pulled to a million and one directions. Should I change this color, should I change the text, etc... <br/><br/>
+
+                    <b>STOP IT!</b> Let us help you!
+                    <br/><br/>
+                    We help <span style={{fontWeight: 'bold', color: '#9333ea'}}>Coaches</span>, <span style={{fontWeight: 'bold', color: '#9333ea'}}>Consultants</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Service Providers</span> add $30k+ to their revenue in 45 days, using our proven landing page template that captures high quality leads. 
                 </motion.p>
                 <div className="phormalabs__aboutus-content_div">
                     {services.map((service, index) => (

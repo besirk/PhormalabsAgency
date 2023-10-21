@@ -47,6 +47,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* scroll-snap-type: mandatory; */
+  scroll-padding-top: 50px;
 }
 h1,
 h2,

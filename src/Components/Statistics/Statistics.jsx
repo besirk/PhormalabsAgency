@@ -3,24 +3,24 @@ import {motion} from 'framer-motion'
 const Statistics = () => {
     const stats = [
         {
-            number: 20,
+            number: 25,
             sign: "+",
-            txt: "Finished Projects",
+            txt: "Finished Landing Pages",
         },
         {
-            number: 20,
+            number: 25,
             sign: "+",
             txt: "Happy Clients",
         },
         {
-            number: 20,
-            sign: "k",
+            number: 80,
+            sign: "k+",
             txt: "Website Visitors",
         },
         {
-            number: 99,
-            sign: "%",
-            txt: "Success Rate",
+            number: 50,
+            sign: "k+",
+            txt: "Revenue Generated",
         },
     ];
 

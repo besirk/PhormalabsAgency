@@ -43,8 +43,8 @@ const Cta = () => {
   };
 
   return (
-    <div className="contact_section">
-      <div className="phormalabs__cta" id="contact">
+    <div className="contact_section" id="contact">
+      <div className="phormalabs__cta" >
         <h2>What are you waiting for?</h2>
         <p>Turn your crazy ideas into the best business model!</p>
         <h2 className="emailll">Contact@phormalabs.com</h2>

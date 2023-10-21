@@ -1,28 +1,45 @@
 .phormalabs__hero {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   align-items: center;
   background: #ebf5ff;
+  width: 100%;
   padding-bottom: 170px !important;
 }
 .phormalabs__hero-content {
-  width: 50%;
+  /* width: 50%; */
+  max-width: 1024px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: .5rem;
+  padding-top: 40px;
+}
+.phormalabs__hero-content .text {
+  font-size: 2rem;
+  text-align: center;
 }
 .phormalabs__hero-content_header {
   all: unset;
   font-family: "Unbounded", sans-serif;
-
+text-align: center;
   color: #1d1d1d;
   margin-bottom: 20px;
   width: 100%;
-  font-size: 62px;
-  line-height: 70px;
+  font-size: 6vw;
+  line-height: 7vw;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform:uppercase
+
 }
 .phormalabs__hero-content_header span {
   background: var(--gradient);
@@ -36,6 +53,9 @@
 }
 .phormalabs__hero-content .button {
   margin-bottom: 10px;
+ /* max-width:50%; */
+ width: 25%;
+ font-size: 24px;
 }
 .phormalabs__hero-image {
   width: 500px;
@@ -108,9 +128,18 @@
   .phormalabs__hero {
     align-items: flex-start;
     text-align: left;
-    padding: 50px 16px !important;
+    padding: 0px 16px !important;
+  }
+  .phormalabs__hero-content_header {
+    font-size: 40px;
+    line-height: 46px;
   }
   .phormalabs__hero-content .button {
     width: 100%;
+    margin-bottom: 200px;
   }
+  .phormalabs__hero-content .text { 
+    font-size: 1.5rem;
+  }
+
 }
