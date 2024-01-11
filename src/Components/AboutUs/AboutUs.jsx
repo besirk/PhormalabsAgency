@@ -49,7 +49,7 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    Dear Coach or Consultant, We get it. Getting high quality leads is hard. Really hard.
+                    No Matter Your Business Size, We'll Help You Scale and Secure More Clients
                 </motion.h2>
                 <motion.p
                     variants={item}
@@ -57,9 +57,9 @@ const AboutUs = () => {
                     whileInView="show"
                     viewport={{ once: true }}
                 >
-                    {/* Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
+                    Phormalabs helps <span style={{fontWeight: 'bold', color: '#9333ea'}}>Contractors</span> and <span style={{fontWeight: 'bold', color: '#9333ea'}}>Solar Companies</span> go digital with website creation,
                     marketing, branding, e-commerce, and more. We believe a strong online
-                    presence is key to success. */}
+                    presence is key to success. 
                     You're probably worried about where your next customer will come from. Stressed and sleeping like a two-year-old. And to top it all of you're being pulled to a million and one directions. Should I change this color, should I change the text, etc... <br/><br/>
 
                     <b>STOP IT!</b> Let us help you!

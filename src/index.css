@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   font-family: "Outfit", sans-serif;
-  /* font-family: "Unbounded", sans-serif; */
 
   line-height: 1.5;
   font-weight: 400;
@@ -60,7 +58,6 @@ h6 {
 }
 
 h1 {
-  font-family: "Unbounded", sans-serif;
   font-style: normal;
   font-size: 72px;
   line-height: 80px;
@@ -71,12 +68,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 h2 {
-  font-family: "Unbounded", sans-serif;
-
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 40px;
+  line-height: 48px;
   /* or 120% */
 
   /* Tertiary/main */
@@ -87,11 +82,9 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 h4 {
-  font-family: "Unbounded", sans-serif;
-
   font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 26px;
+  line-height: 28px;
   /* identical to box height, or 117% */
 
   text-align: center;

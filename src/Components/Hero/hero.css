@@ -105,8 +105,8 @@ text-align: center;
     align-items: center;
     width: 100%;
   }
-  .phormalabs__hero-content_header {
-    font-size: 40px;
+  .phormalabs__hero-content h1 {
+    font-size: 50px;
     line-height: 50px;
   }
   .phormalabs__hero-image {
