@@ -35,6 +35,7 @@ const Hero = () => {
                     </motion.h1>
                     
                     <motion.p variants={item} className='text'>Getting high quality leads from your landing page is hard. We make it a whole lot easier, more predictable, less stressful, and more fun.</motion.p>
+                    <motion.p variants={item}>Ready to take your brand on a journey of digital success? Let's create a unique digital strategy that sets you apart from the competition and delivers measurable results.</motion.p>
                     <motion.a variants={item} href="#contact" className='button'>Get Started</motion.a>
                 </div>
                 {/* <motion.img variants={item} src={HeroImg} alt="Hero image" className='phormalabs__hero-image' /> */}
